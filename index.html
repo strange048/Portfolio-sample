@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./mobile.css">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="name">Ashfolio</div>
+      <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    </nav>
+    <nav id="hamburger-nav" >
+      <div class="name">Ashfolio</div>
+      <div class="menu">
+        <div class="icon" onclick="touchon()"><span></span><span></span><span></span></div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="touchon()">About</a></li>
+          <li><a href="#skills" onclick="touchon()">Skills</a></li>
+          <li><a href="#projects" onclick="touchon()">Projects</a></li>
+          <li><a href="#contact" onclick="touchon()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section_pic-container">
+        <img src="./assets/4884785-modified.jpg.png" alt="Ashraf Profile pic">
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Hello,I'm</p>
+        <h1 class="title">Ashraf</h1>
+        <p class="section_text_p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/ashrafkaif.docx')">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="MyLInkedProfiel" class="icono" onclick="location.href='https://www.linkedin.com/in/ashraf-kaif-shaik-4193ba283/'">
+          <img src="./assets/github.png" alt="Mygithubprofile" class="icono" onclick="location.href='https://github.com/strange048'">
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section_text_p1">Get to Know more</p>
+      <h1 class="title">About me</h1>
+      <div class="section-container">
+        <div class="section_pic-container">
+          <img src="./assets/developer_male-modified.jpg" alt="profile pic" class="about-pic">
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="exp" class="icono">
+              <h3>Education</h3>
+              <p>MCA<br/>Computer Applications</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="exp" class="icono">
+              <h3>Education</h3>
+              <p>Bsc<br/>Maths,Physics & Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>Results-driven software professional with a strong
+              bakcground in coding,data analysis and logical
+              planning.Enthusiastic post graduate with basic
+              knowledge in coding and design. Proficient in Java,
+              HTML, JavaScript, and CSS. Ability to learn new
+              softwares and technologies quickly. Capability to work
+              in teams by providing valuable support.Posesses a
+              keen eye for detail and a commitment to accuracy.</p>
+
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="arrow" class="icono arrow" onclick="location.href='./#skills'">
+    </section>
+    <section id="skills">
+      <p class="section_text_p1">Explore Pro</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="projectsicon" class="icono">
+                <div><h3>HTML</h3>
+                <p>Expeienced</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="projectsicon" class="icono">
+                <div><h3>CSS</h3>
+                <p>Expeienced</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="projectsicon" class="icono">
+                <div><h3>JavaScript</h3>
+                <p>Intermediate</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="projectsicon" class="icono">
+                <div><h3>React Js</h3>
+                <p>Basic</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="projectsicon" class="icono">
+                <div><h3>Java</h3>
+                <p>Expeienced</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="projectsicon" class="icono">
+                <div><h3>SQL</h3>
+                <p>Intermediate</p></div>
+              </article>
+
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Other Skills</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="projectsicon" class="icono">
+                <div><h3>Vs Code</h3>
+                <p>Expeienced</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="projectsicon" class="icono">
+                <div><h3>Git & Github</h3>
+                <p>Intermediate</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="projectsicon" class="icono">
+                <div><h3>BootStrap</h3>
+                <p>Basic</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="projectsicon" class="icono">
+                <div><h3> Communication & Problem Solving </h3>
+                <p>Expeienced</p></div>
+                </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="arrow" class="icono arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+      <p class="section_text_p1">My Projects</p>
+      <h1 class="title">Projects</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="project" class="project-img">
+          </div>
+          <h2 class="skills-sub-title project-title">Project One</h2>
+          <div class="btn-container"><button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">github</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button></div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="project" class="project-img">
+          </div>
+          <h2 class="skills-sub-title project-title">Project Two</h2>
+          <div class="btn-container"><button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">github</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button></div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="project" class="project-img">
+          </div>
+          <h2 class="skills-sub-title project-title">Project three</h2>
+          <div class="btn-container"><button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">github</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button></div>
+        </div></div>
+      </div>
+      <img src="./assets/arrow.png" alt="arrow" class="icono arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+      <p class="section_text_p1">get in touch</p>
+      <h1 class="title">contactme</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="email" class="icono email-icono ">
+          <p><a href="mailto:shaikashrafkaif@gmail3113.com">shaikashrafkaif3113@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="email" class="icono contact-icono">
+          <p><a href="https://www.linkedin.com/in/ashraf-kaif-shaik-4193ba283/">linkedin</a></p>
+        </div>
+      </div>
+
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+        </div>
+      </nav>
+      <p>copyright &#169; 2023 Ashraf All rights Reserved</p>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
